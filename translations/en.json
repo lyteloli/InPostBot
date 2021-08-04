@@ -1,0 +1,107 @@
+{
+  "start": {
+    "text": "Hi, <b>{0}</b>, how may I serve you?\n\n<a href='https://github.com/lyteloli/NekoGram'>⚡️Powered by <b>NekoGram</b>⚡️</a>",
+    "markup": [
+      [{"text": "➕Create post", "call_data": "menu_create_post"}, {"text": "📂My posts", "call_data": "menu_not_available"}],
+      [{"text": "🇺🇳Language", "call_data": "menu_not_available"}, {"text": "❓FAQ", "call_data": "menu_faq"}]
+    ],
+    "parse_mode": "HTML",
+    "no_preview": true
+  },
+  "first_start": {
+    "text": "Hello <b>{0}</b>, I'm InPost, and I provide you the most convenient way to create posts with codes.\n\n⚠️ Continue only if you agree to my terms of service.\n\n<a href='https://github.com/lyteloli/NekoGram'>⚡️Powered by <b>NekoGram</b>⚡️</a>",
+    "markup": [
+      [{"text": "📃Terms of service", "call_data": "menu_terms_of_service"}],
+      [{"text": "➕Create post", "call_data": "menu_create_post"}, {"text": "📂My posts", "call_data": "menu_not_available"}],
+      [{"text": "🇺🇳Language", "call_data": "menu_not_available"}, {"text": "❓FAQ","call_data": "menu_faq"}]
+    ],
+    "no_preview": true
+  },
+  "wrong_content_type": {
+    "text": "Wrong content type."
+  },
+  "banned": {
+    "text": "Sorry, you are banned from using me"
+  },
+  "menu_not_available": {
+    "text": "This section is in development yet",
+    "markup": [
+      [{"text": "⬅️Back", "call_data": "menu_start"}]
+    ]
+  },
+  "share": {
+    "text": "💌Share"
+  },
+  "caption_too_long": {
+    "text": "{0} is more than 1024 symbols",
+    "markup": [
+      [{"text": "⬅️Back"}]
+    ],
+    "markup_type": "reply"
+  },
+  "code_too_long": {
+    "text": "Maximum code length is 50, <b>not</b> {0} symbols",
+    "markup": [
+      [{"text": "⬅️Back"}]
+    ],
+    "markup_type": "reply"
+  },
+  "code_taken": {
+    "text": "This code is unavailable",
+    "markup": [
+      [{"text": "⬅️Back"}]
+    ],
+    "markup_type": "reply"
+  },
+  "post_created": {
+    "text": "Your post has been created. You can share its code:"
+  },
+  "too_many_posts": {
+    "text": "You can't have more than 10 posts with same code, please choose something different",
+    "markup": [
+      [{"text": "⬅️Back"}]
+    ],
+    "markup_type": "reply"
+  },
+  "upload_error": {
+    "text": "Upload failed, try again"
+  },
+  "menu_faq": {
+    "text": "Here are the most frequently asked questions and other information related to me",
+    "markup": [
+      [{"text": "📃Terms of service", "call_data": "menu_terms_of_service"}],
+      [{"text": "⬅️Back", "call_data": "menu_start"}]
+    ]
+  },
+  "menu_terms_of_service": {
+    "text": "Objects of agreement: anyone who uses this bot (user), bot, developers.\n\nAll users who use the bot automatically agree with the terms of service described below.\n\nUsers and only users are responsible for the content they share using this bot.\n\nAny inappropriate content will be deleted on demand.\n\nAny user who breaks terms of this agreement may get banned from using the bot.",
+    "markup": [
+      [{"text": "⬅️Back", "call_data": "menu_start"}]
+    ]
+  },
+  "menu_create_post_step_1": {
+    "text": "Please send me text/photo/video/GIF, you can provide a caption (up to 1024 symbols), Telegram formatting is supported.",
+    "markup": [
+      [{"text": "⬅️Back"}]
+    ],
+    "markup_type": "reply",
+    "allowed_items": ["text", "photo", "video", "animation"]
+  },
+  "menu_create_post_step_2": {
+    "text": "Please send inline URI-keyboard map in format <b>TEXT + URI</b> or <b>TEXT + URI # TEXT + URI</b> (use # to have multiple buttons in a single row), use newlines to split rows. You can't have more than 5 buttons in a row and more than 20 rows",
+    "markup": [
+        [{"text": "⭕️ Not needed ⭕️"}, {"text": "⬅️Back"}]
+    ],
+    "markup_type": "reply"
+  },
+  "menu_create_post_step_3": {
+    "text": "Please send your preferred post code. It can be anything, even emoji. You will access your post using this code. For example: <code>@In_Post_bot my awesome code</code>\nLimit: 50 symbols.",
+    "markup": [
+      [{"text": "⬅️Back"}]
+    ],
+    "markup_type": "reply"
+  },
+  "menu_create_post_step_4": {
+    "text": "Your post has been created. You can share it:"
+  }
+}
